@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02b9fb"
+    tools:context="com.example.ashutosh.logindemousingfragment.ActivityTwoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:weight="1">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Welcome"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:id="@+id/welcomeUserText"
+           android:background="#fff"
+           android:hint="User Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextOldPassword"
+            android:layout_below="@id/welcomeUserText"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="#fff"
+            android:hint="Old Password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextNewPassword"
+            android:layout_below="@id/editTextOldPassword"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="#fff"
+            android:hint="New Password"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextConfermPassword"
+            android:layout_below="@id/editTextNewPassword"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="#fff"
+            android:hint="Confirm Password"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="#fff"
+            android:id="@+id/submitButton"
+            android:layout_below="@id/editTextConfermPassword"
+            android:text="Submit"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
